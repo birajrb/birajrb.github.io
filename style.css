@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1b1c1d;
+  padding: 14px;
+  flex-wrap: wrap;
+}
+
+.lol-title {
+  font-size: 25px;
+  font-weight: 1000;
+  padding: 10px;
+  margin: 10px;
+  color: #ffd700;
+  animation-name: lol-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li a:hover {
+  color: white;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links li {
+  padding: 10px;
+  margin: 10px;
+}
+.links li a {
+  font-size: 15px;
+  color: rgb(204, 195, 195);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes lol-animation {
+  30% {
+    color: #ffa400;
+  }
+
+  60% {
+    color: #f4ff00;
+  }
+}
+
+main {
+  margin: 20px;
+}
+
+#skin-shard {
+  /*search box*/
+  background: url("img/search-icon.png") no-repeat top right;
+  background-position-y: 5px;
+  background-position-x: 130px;
+  background-size: 10%;
+  border-radius: 20px;
+  border: 1px solid #d5d5d5;
+  padding: 5px;
+  outline: none;
+  margin-left: 20px;
+}
+
+#skin-shard:focus {
+  border: 1px solid cornflowerblue;
+  outline: none;
+}
+.main-h2 {
+  /*search account top*/
+  margin-bottom: 5px;
+  padding: 10px 10px 10px 0px;
+}
+.skin-shard {
+  margin-bottom: 20px;
+}
+.skin-shard h3 {
+  /*skin shard  heading*/
+  padding: 10px 10px;
+  font-size: 15px;
+  font-weight: 900;
+}
+.be {
+  margin-bottom: 20px;
+}
+
+.be h3 {
+  /*blue essence heading*/
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.be [type="radio"] {
+  /*blue essence radion buttons*/
+  margin: 5px 10px 10px 15px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.region {
+  margin-bottom: 20px;
+}
+
+.region h3 {
+  /*blue essence heading*/
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.region [type="checkbox"] {
+  /*blue essence radion buttons*/
+  margin: 5px 10px 10px 15px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  position: sticky;
+  align-self: flex-start;
+  top: 0px;
+}
+
+.product {
+  display: flex;
+  margin: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  border-radius: 0.28571429rem;
+  box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
+  min-width: 300px;
+  height: 460px;
+  text-align: center;
+  margin: 10px 6px;
+
+  /* height: 350px; */
+}
+
+.product-image {
+  padding: 14px 14px;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.product-details-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.product-details-region {
+  padding: 5px 5px;
+  margin: 5px 5px;
+}
+
+.product-details-level {
+  padding: 5px 5px;
+  margin: 5px 5px;
+}
+
+.product-details-be {
+  padding: 5px 5px;
+  margin: 5px 5px;
+}
+
+.product-details-button {
+  text-align: left;
+  margin-left: 5px;
+}
+
+.product-details {
+  display: flex;
+  justify-content: space-between;
+}
+.product-details-price {
+  padding: 5px 5px;
+  margin: 5px 5px;
+  font-size: 20px;
+}
+
+.product-details-button .purchase {
+  background-color: #55acee;
+  box-shadow: none;
+  border: none;
+  min-height: 1em;
+  margin: 0 0.25em 0 0;
+  padding: 0.78571429em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.28571429rem;
+  font-size: 15px;
+  font-weight: 800;
+  color: rgb(250, 249, 249);
+}
+
+.product-details-button .purchase:focus {
+  outline: none;
+}
+.product-details-button .purchase:hover {
+  background-color: #35a2f4;
+  color: white;
+}
+.product-details-button .skin-shard-button {
+  outline: none;
+}
+.product-details-button .skin-shard-button:hover {
+  background-color: #cacbcd;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.product-details-button .skin-shard-button:focus {
+  outline: none;
+}
+.product-details-button .skin-shard-button {
+  box-shadow: none;
+  border: none;
+  min-height: 1em;
+  margin: 0 0.25em 0 0;
+  padding: 0.78571429em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.28571429rem;
+  font-size: 15px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 630px) {
+  header {
+    display: block;
+  }
+  header .links {
+    display: block;
+    text-align: left;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .content {
+    display: block;
+  }
+
+  .sidebar {
+    position: relative;
+  }
+
+  .product {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .product-card {
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    border-radius: 0.28571429rem;
+    box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
+    min-width: 250px;
+    height: 450px;
+    text-align: center;
+    margin: 10px 6px;
+
+    /* height: 350px; */
+  }
+
+  .product-details-button .purchase {
+    font-size: 13px;
+  }
+  .product-details-button .skin-shard-button {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  links li a {
+    font-size: 12px;
+  }
+  .skin-shard h3 {
+    font-size: 12px;
+  }
+  .be h3 {
+    font-size: 12px;
+  }
+
+  .be label {
+    font-size: 12px;
+  }
+  .region h3 {
+    font-size: 12px;
+  }
+  .region label {
+    font-size: 12px;
+  }
+
+  .product-details-region {
+    font-size: 14px;
+  }
+  .product-details-level {
+    font-size: 14px;
+  }
+
+  .product-details-be {
+    font-size: 14px;
+  }
+  .product-details-price {
+    font-size: 17px;
+  }
+
+  .product-details-button .purchase {
+    font-size: 12px;
+  }
+  .product-details-button .skin-shard-button {
+    font-size: 12px;
+  }
+} ;
